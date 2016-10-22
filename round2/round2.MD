@@ -9,7 +9,8 @@ La fuente principal para esta tarea es [esta pregunta de Stack Overflow](http://
 
 1. La que primera que me funcionó, fue modificar el `config/boot.rb` para incluir el siguiente bloque de código:
 
-```require 'rails/commands/server'
+```ruby
+require 'rails/commands/server'
 
 module Rails
   class Server
@@ -18,15 +19,18 @@ module Rails
       default_options_alias.merge!(:Port => 7489)
     end    
   end
-end```
+end
+```
 
 Ahí sólo reinicié el servidor y listo.
 
 ![alt-text](code.png)
 
 2. La segunda es hacer un bash script con el siguiente código:
-```#!/bin/bash
-rails server -p 10524```
+```bash
+#!/bin/bash
+rails server -p 7849
+```
 
 Para esta solución, tuve qué averiguar qué es un bash script y cómo se ejecutan. Para entenderlo encontré [este link](http://www.howtogeek.com/67469/the-beginners-guide-to-shell-scripting-the-basics/). En este caso, el script lo hice dentro de una carpeta scripts que creé adentro del proyecto y lo ejecuté con `./nombredelscript` y funcionó perfectamente.
 
