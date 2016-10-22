@@ -34,9 +34,9 @@ rails server -p 7849
 
 Para esta solución, tuve qué averiguar qué es un bash script y cómo se ejecutan. Para entenderlo encontré [este link](http://www.howtogeek.com/67469/the-beginners-guide-to-shell-scripting-the-basics/). En este caso, el script lo hice dentro de una carpeta scripts que creé adentro del proyecto y lo ejecuté con `./nombredelscript` y funcionó perfectamente.
 
-![alt-text](code2.png)
 
 ### Veredicto
 
 Prefiero la primera solución. De ese modo nadie tiene que acordarse de correr los scripts, sino que está embebido en el código.
+
 ![alt-text](browser.png "resultado")
