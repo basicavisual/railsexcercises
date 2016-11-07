@@ -56,4 +56,4 @@ xml.target("name" => "compile", "option" => "fast")
 ```
 la página quedó así:
 
-![alt-text](htmlfinal.png)
+![alt-text](hmtlfinal.png)
