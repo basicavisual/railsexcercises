@@ -27,7 +27,8 @@ end
 
 ¿Por qué la guía de rails me mandaría a ponerle curly braces? No sé. Para burlarse de los n00bs. En fin. Traté de agregar más de una línea de XML al controller pero fallé miserablemente. El código:
 
-```class TextController < ApplicationController
+```
+class TextController < ApplicationController
   def show
     render inline: "xml.em ('Hola Mundo') xml.a('link', 'href' => 'http://google.com')", type: :builder
   end
@@ -40,7 +41,8 @@ El error:
 
 Aún así, no creo que modificar el controlador para mostrar el XML sea para ninguna otra cosa más que para testeo. Finalmente decidí renderear algo de texto formateado en XML directo en el view, que creo que es la aplicación más sensata de este ejercicio. El controlador quedó así:
 
-```def show
+```
+def show
 end
 ```
 
