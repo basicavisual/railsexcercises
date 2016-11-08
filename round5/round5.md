@@ -2,7 +2,7 @@
 
 Lo primero que hice fue crear una nueva app `rails new nombredelapp` y un controlador index llamado hello `rails generate controller hello`. Luego modificar el index.html.erb en el nombredelapp/app/views/hello para que dijera `<h1>world</h1>`. Me dió el siguiente error:
 
-![alt-text](errornoruas.png)
+![alt-text](errornorutas.png)
 
 Cuando en la terminal busqué las rutas, salió esto:
 
