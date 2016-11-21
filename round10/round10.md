@@ -20,13 +20,13 @@ end
 
 Y en el URL escribir `api.miaplicacion.dev/?name=juan` lo que dio como resultado:
 
-[!alt-text](mensaje1.png)
+![alt-text](mensaje1.png)
 
 Como `params[:name]` es dinámico, lo que le pongas al final de `?name=` dará como resultado "hola, " y el nombre que pusiste en el URL. Ejemplos:
 
-[!alt-text](martha.png)
+![alt-text](martha.png)
 
-[!alt-text](beto.png)
+![alt-text](beto.png)
 
 
 La segunda parte (¡para puntos extra!) era que si el url era `?name=ramon` el mensaje dijera "hola, outis", esto lo logramos con un sencillo if/else en el controlador:
@@ -44,4 +44,4 @@ end
 
 Lo que da como resultado:
 
- [!alt-text](outis.png)
+ ![alt-text](outis.png)
